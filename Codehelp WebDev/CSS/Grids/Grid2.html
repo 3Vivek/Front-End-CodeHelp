@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid2</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(58, 55, 55);
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,200px);
+            gap: 0.5rem;
+            padding: 4rem;
+            border: 2px solid rgb(66, 141, 141);
+            /* justify-items=multiple grid ko start end center me krta */
+            /* Horizonatl */
+
+            /* justify-items: center; */
+            /* Verticle */
+            /* align-items: stretch; */
+
+            /* combo of both */
+            place-items: stretch;
+        }
+        .item{
+            /* width: 100px;
+            height: 100px; */
+            background-color: aqua;
+            border: 5px solid wheat;
+
+            /* horizontal axis justify-self=>align krta grid ko*/
+            /* justify-self: center; */
+
+            /* Verticle axis */
+            /* align-self: stretch; */
+
+            /* combination of both */
+            /* place-self: center; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+    
+</body>
+</html>

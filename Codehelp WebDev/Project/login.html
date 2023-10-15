@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+            border: 4px solid rgb(236, 122, 122);
+            height: 700px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box{
+            height: 400px;
+            width: 350px;
+            background-color:palegreen;         
+        }
+        #name{
+            width: 300px;
+            height: 40px;
+            margin-top: 50px;
+            margin-left: 20px;
+            
+        }
+        #mail{
+            width: 300px;
+            height: 40px;
+            margin-top: 50px; 
+            margin-left: 20px;
+
+
+        }
+        #pass{
+            width: 300px;
+            height: 40px;
+            margin-top: 50px; 
+            margin-left: 20px;
+
+
+
+        }
+        #sub{
+            width: 100px;
+            height: 40px;
+            margin-top: 50px; 
+            margin-left: 20px;
+
+
+        }
+    </style>
+</head> 
+<body>
+    <div class="container">
+    
+        <div class="box">
+            <input type="text" placeholder="Enter Your Name" id="name" ><br>
+            <input type="text" placeholder="Enter Email" id="mail"> <br>
+            <input type="password" placeholder="Enter Password" id="pass"><br>
+            <input type="button" id="sub" value="Submit" onclick="Validate()">
+        </div>
+    </div>
+</body>   
+    <script>
+        let Validate=()=>{
+            var name=document.getElementById("name").value;
+            var pass=document.getElementById("pass").value;
+            console.log(pass);
+            if(name==""){
+                alert("Name can't be Empty");
+                return false;
+            }
+            else if(pass.length<6){
+                alert("Password cant be less than 6 char");
+                return false;
+            }
+
+        }
+    </script>
+
+
+</html>

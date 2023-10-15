@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container{
+                width: 100vw;
+                height: 100vh;
+                background-color: rgb(184, 243, 243);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .card{
+                width: 360px;
+                height: 620px;
+                background-color: rgba(63, 62, 63, 0.658);
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                
+            }
+            .card img{
+                width: 100%;
+                border-radius: 10px;
+                height: 45%;
+                
+            }
+            .card h2{
+                font-weight: bold;
+                font-size: 1.6em;
+            }
+            .card p{
+                font-weight: 400;
+                padding: 10px;
+                color: rgb(29, 30, 31);
+                font-size: 1.1rem;
+            }
+            #amountBox{
+                width: 80%;
+                height: 10%;
+                background-color: rgb(68, 63, 63,0.6);
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 20px;
+                padding-left:10px ;
+            }
+            #leftBox{
+                height: 100%;
+                display: flex;
+                gap: 2px;
+                align-items: center;
+            }
+            
+            #payBtn{
+                width: 40%;
+                height: 10%;
+                background-color: rgb(22, 22, 79) ;
+                color: wheat;
+                border: none;
+                border-radius: 10px;
+                box-shadow: 0 5px 5px rgb(29, 30, 31);
+
+            }
+            #cancelBox{
+                text-decoration: none;
+                font-weight: bold;
+                font-size: large;
+
+
+            }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="5.jpg" alt="">
+            <h2>Order Summary</h2>
+            <p>This is all the product that i have orderd from <E-bay>
+                and i got it from a suitabe price. I have to pay total
+                Rs. 5000 -/.
+            </E-bay></p>
+            <div id="amountBox">
+                <div id="leftBox">
+                    <div id="imgBox">
+                        <p>🎵 </p>
+                    </div>
+                    <div id="amtBox">
+                        <p>Amount</p>
+                        <p>$ 99/year</p>
+                    </div>
+
+
+
+                </div>
+                <div id="rightBox">
+                    <a href="#">Change</a>
+                </div>
+            </div>
+            <button id="payBtn">Procced to Check</button>
+            <a href="#" id="cancelBox">Cancel Order</a>
+
+        </div>
+    </div>
+</body>
+</html>
